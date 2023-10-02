@@ -1255,8 +1255,8 @@ $(function(){
 <link href="./home_files/memberOptions.css" rel="stylesheet" type="text/css">
 <script>
 		var memberCookie = $.parseJSON($.cookie('member'));
- 		if (memberCookie || $.cookie('hasPageAccess')) {
- 			var $options = $('<div id="memberOptions"><ul></ul></div>');
+		if (memberCookie || $.cookie('hasPageAccess')) {
+		var $options = $('<div id="memberOptions"><ul></ul></div>');
 			if (memberCookie) {
 				$options.find('ul').append('<li><a href="/uk-tourism/member/profile">My Profile</a></li>')
 			}
